@@ -6,7 +6,7 @@ from selenium import webdriver
 link = "http://selenium1py.pythonanywhere.com/"
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="class")
 def browser():
     print("\nstart browser for test..")
     browser = webdriver.Chrome()

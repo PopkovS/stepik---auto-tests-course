@@ -1,17 +1,7 @@
-def simple_generator():
-    print('generator starts working')
-    yield 42
-    print('generator stopped working')
+from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
+# инициализируем драйвер браузера. После этой команды вы должны увидеть новое открытое окно браузера
+# driver = webdriver.Firefox()
 
-gen = simple_generator()
-value = next(gen)
-print(value)
-
-# Тут появится исключение StopIteration и генератор закончит свое выполнение, кроме того, если
-# захотим снова использовать генератор, то придется создавать новый объект генератора, потому что # прошлый истощился
-next(gen)
-
-# Из-за возникновения StopIteration генераторы можно использовать в цикле for и тут 
-# StopIteration будет скрыт циклом
-for i in simple_generator(): pass
+driver.get("https://stepik.org/lesson/25969/step/8")
