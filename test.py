@@ -1,29 +1,17 @@
-import unittest
-from selenium import webdriver
-import time
+def simple_generator():
+    print('generator starts working')
+    yield 42
+    print('generator stopped working')
 
-class TestReg(unittest.TestCase):
-    def test_reg1(self):
-        link = "http://suninjuly.github.io/registration2.html"
-        browser = webdriver.Chrome()
-        browser.get(link)
 
-        input1 = browser.find_element_by_tag_name("input")
-        input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector("[placeholder=\"Input your last name\"]")
-        input2.send_keys("Petrov")
-        input3 = browser.find_element_by_css_selector("[placeholder=\"Input your email\"]")
-        input3.send_keys("test@test.com")
+gen = simple_generator()
+value = next(gen)
+print(value)
 
-        button = browser.find_element_by_css_selector("button.btn")
-        button.click()
-        time.sleep(1)
-        welcome_text_elt = browser.find_element_by_tag_name("h1")
-        welcome_text = welcome_text_elt.text
-        # assert "Congratulations! You have successfully registered!" == welcome_text
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Should be absolute value of a number")
-        time.sleep(10)
-        browser.quit()
+# Тут появится исключение StopIteration и генератор закончит свое выполнение, кроме того, если
+# захотим снова использовать генератор, то придется создавать новый объект генератора, потому что # прошлый истощился
+next(gen)
 
-if __name__ == "__main__":
-    unittest.main()
+# Из-за возникновения StopIteration генераторы можно использовать в цикле for и тут 
+# StopIteration будет скрыт циклом
+for i in simple_generator(): pass

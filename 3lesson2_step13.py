@@ -10,9 +10,9 @@ class TestReg(unittest.TestCase):
 
         input1 = browser.find_element_by_tag_name("input")
         input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector("[placeholder=\"Input your last name\"]")
+        input2 = browser.find_element_by_css_selector("[placeholder='Input your last name']")
         input2.send_keys("Petrov")
-        input3 = browser.find_element_by_css_selector("[placeholder=\"Input your email\"]")
+        input3 = browser.find_element_by_css_selector("[placeholder='Input your email']")
         input3.send_keys("test@test.com")
 
         button = browser.find_element_by_css_selector("button.btn")
@@ -32,9 +32,9 @@ class TestReg(unittest.TestCase):
 
         input1 = browser.find_element_by_tag_name("input")
         input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector("[placeholder=\"Input your last name\"]")
+        input2 = browser.find_element_by_css_selector("[placeholder='Input your last name']")
         input2.send_keys("Petrov")
-        input3 = browser.find_element_by_css_selector("[placeholder=\"Input your email\"]")
+        input3 = browser.find_element_by_css_selector("[placeholder='Input your email']")
         input3.send_keys("test@test.com")
 
         button = browser.find_element_by_css_selector("button.btn")
