@@ -1,7 +1,10 @@
-from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+def test_abs1():
+    assert abs(-42) == 42, "Should be absolute value of a number"
 
-# инициализируем драйвер браузера. После этой команды вы должны увидеть новое открытое окно браузера
-# driver = webdriver.Firefox()
+def test_abs2():
+    assert abs(-42) == -42, "Should be absolute value of a number"
 
-driver.get("https://stepik.org/lesson/25969/step/8")
+if __name__ == "__main__":
+    test_abs1()
+    test_abs2()
+    print("Everything passed")

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebcf6e11-2379-4e6b-a7ae-b1d34ec24f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_rerun.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_fixture5.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_fixture5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_fixture7.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_fixture7.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,17 +26,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WetNkSdusDNfayZjMP638QdbmB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stepik369" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\testProjekt\stepik---auto-tests-course\old_tests" />
-      <recent name="F:\testProjekt\stepik---auto-tests-course" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\testProjekt\stepik---auto-tests-course" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\testProjekt\stepik---auto-tests-course" />
+      <recent name="F:\testProjekt\stepik---auto-tests-course\old_tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,5 +195,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
