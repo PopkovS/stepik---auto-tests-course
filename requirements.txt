@@ -6,7 +6,7 @@ MouseInfo==0.1.2
 packaging==20.0
 Pillow==7.0.0
 pluggy==0.13.1
-py==1.8.1
+py==1.10.0
 PyAutoGUI==0.9.48
 PyGetWindow==0.0.8
 PyMsgBox==1.0.7
